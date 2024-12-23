@@ -2,6 +2,11 @@
 import vuetify, {transformAssetUrls} from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
+    head: {
+        link: [
+            {rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css'},
+        ]
+    },
     ssr: true,
     build: {
         transpile: ['vuetify'],
@@ -11,10 +16,10 @@ export default defineNuxtConfig({
     ],
     app: {
         baseURL: '/rickandmorty-NUXT/',
-        pageTransition: { name: 'page', mode: 'out-in' },
-        layoutTransition: { name: 'layout', mode: 'out-in' },
+        pageTransition: {name: 'page', mode: 'out-in'},
+        layoutTransition: {name: 'layout', mode: 'out-in'},
         middleware: [
-            { name: 'manifest-route-rule', override: true }
+            {name: 'manifest-route-rule', override: true}
         ]
     },
     modules: [
@@ -28,6 +33,9 @@ export default defineNuxtConfig({
         'nuxt-particles',
         'nuxt-mdi',
     ],
+    vuetify: {
+        defaultAssets: false,
+    },
     vite: {
         vue: {
             template: {
