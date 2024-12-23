@@ -2,6 +2,7 @@
 import vuetify, {transformAssetUrls} from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
+    ssr: true,
     build: {
         transpile: ['vuetify'],
     },
@@ -9,6 +10,7 @@ export default defineNuxtConfig({
         '@/assets/css/styles.css',  // Вказуємо шлях до глобального стилю
     ],
     app: {
+        baseURL: '/rickandmorty-NUXT/',
         pageTransition: { name: 'page', mode: 'out-in' },
         layoutTransition: { name: 'layout', mode: 'out-in' },
         middleware: [

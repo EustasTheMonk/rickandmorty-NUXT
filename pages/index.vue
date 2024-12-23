@@ -59,6 +59,8 @@ onMounted(() => {
       </ul>
       <v-pagination  v-model="currentPage" class="w-fit mx-auto rounded-[12px] bg-grey-darken-4 mt-[10px]" total-visible="6"
                     length="42"/>
+      <button @click="changePage(currentPage - 1)">prev</button>
+      <button @click="changePage(currentPage + 1)">next</button>
     </template>
     <v-btn @click="changePage(currentPage + 1)">nextPage</v-btn>
     <v-btn @click="console.log(paget)">paget</v-btn>

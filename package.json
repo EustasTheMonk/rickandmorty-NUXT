@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "deploy": "nuxt generate && npx gh-pages -d dist",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -22,6 +23,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "nuxt-particles": "^0.3.0",
     "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.7.5"
