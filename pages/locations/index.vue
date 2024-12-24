@@ -3,7 +3,7 @@ import {useAsyncData, useRoute, useRouter} from "#app";
 import {ref} from "vue";
 
 const route = useRoute();
-const router = useRouter();
+// const router = useRouter();
 
 const currentPage = ref(Number(route.query.page) || 1);
 

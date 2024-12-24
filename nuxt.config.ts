@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         '@/assets/css/styles.css',  // Вказуємо шлях до глобального стилю
     ],
     app: {
-        baseURL: '/rickandmorty-NUXT/',
+        // baseURL: '/rickandmorty-NUXT/',
         pageTransition: {name: 'page', mode: 'out-in'},
         layoutTransition: {name: 'layout', mode: 'out-in'},
         middleware: [
