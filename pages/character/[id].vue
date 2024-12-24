@@ -44,6 +44,7 @@ const openEpisodeGoogle = (episodeName) => {
         </div>
       </div>
     </div>
+    <button class="btn btn-primary"></button>
     <div class="mt-[10px] text-gray-400">Episodes: </div>
       <ul class="mt-[10px] flex justify-center flex-wrap gap-[10px]">
         <li :key="episode.name" v-for="(episode) in character.episodes">

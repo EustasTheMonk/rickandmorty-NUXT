@@ -59,7 +59,8 @@ onMounted(() => {
       </ul>
       <v-pagination  v-model="currentPage" class="w-fit mx-auto rounded-[12px] bg-grey-darken-4 mt-[10px]" total-visible="6"
                     length="42"/>
-      <button @click="changePage(currentPage - 1)" class="bg-amber-500 mr-[15px]">prev</button>
+      <button @click="router.push('google.com')" class="bg-amber-500 mr-[15px]">prev</button>
+      <a href="https://google.com" class="bg-amber-500 mr-[15px]">linktoG</a>
       <button @click="changePage(currentPage + 1)" class="bg-amber-500">next</button>
     </template>
     <v-btn @click="changePage(currentPage + 1)">nextPage</v-btn>
